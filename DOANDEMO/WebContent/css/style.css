@@ -1,0 +1,151 @@
+#slider img {
+	position: relative;
+	top: -8px;
+	margin-left: -8px;
+	width: 1368px;
+}
+
+a {
+	text-decoration: none;
+	color:  inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+#menuTD1 {
+	position: absolute;
+	margin-top: -12px;
+	margin-left: -8px;
+	background-color: #254CF5;
+	height: 40px;
+	width: 1368px;
+	border-top: 1px solid #7FD7E4;
+	border-bottom: 10px solid #0D20AB;
+}
+
+#menuTD1 li {
+	color: #fff;
+	float: left;
+	width: 300px;
+	height: 35px;
+	background-color: #254CF5;
+	text-align: center;
+	border-right: 1px solid #7FD7E4;
+	line-height: 35px;
+	margin-top: -12px;
+	font-weight: bold;
+}
+
+#menuTD1 a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#menuTD1 a:hover {
+	color: #EB791C;
+}
+
+.button {
+	font-weight: bold;
+	position: absolute;
+    background-color: #65B0E5;
+    color: white;
+    padding: 10px 20px;
+	height: 35px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    right: 24%;
+    margin-top: -8.5px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 14px;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #EB791C;
+}
+
+.clear {
+    clear: both;
+}
+
+#danhsach {
+	position: absolute;
+	top: 250px;
+	margin-left: 100px;
+	background-color: #AEE1E7;
+	width: 230px;
+	border: 1px solid #ADA0CC;
+	border-radius: 12px;
+}
+
+#danhsach #menu ul > li > a > p > img {
+	float: left;
+	padding-right: 10px;
+	margin-top: 10px;
+}
+
+#menu li {
+	line-height: 45px;
+	border-top: 1px solid #ADA0CC;
+	margin-top: -10px;
+	margin-bottom: -30px;
+	margin-left: -40px;
+	padding-left: 40px;
+	padding-bottom: 30px;
+}
+
+#menu a:hover {
+	color: #EB791C;
+}
+
+#menu a:hover > p > img {
+	height: 20px;
+}
+
+#CauHoi {
+	positon: relative;
+	margin-top: 50px;
+	margin-left: 30%;
+}
+
+#Traloi {
+	border: 1px solid #3627F5;
+	border-radius: 10px;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	width: 800px;
+}
+
+#nut {
+	position: relative;
+	margin-left: 80%;
+	margin-top: 10px;
+}
+
+#nut3 {
+	font-weight: bold;
+    background-color: #65B0E5;
+    color: white;
+    padding: 10px 20px;
+	height: 35px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    margin-top: -8.5px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 14px;
+    transition-duration: 0.4s;
+}
+
+#nut3:hover {
+    background-color: #281EED;
+    color: #fff;
+}
