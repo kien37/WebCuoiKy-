@@ -27,6 +27,10 @@
 		String gio;
 		String phut;
 		String giay;
+		
+		int soluongcauhoi = 0;
+		int i = 0;
+		ResultSet rs = null;
 	%>
 	<div id="slider">
 		<img alt="SPKT" src="images/SPKT.jpg">
@@ -47,7 +51,7 @@
 	<div class="clear"></div>
 	</section>
 	<input id="nut3" type="button" name="submit" onclick="NopBai()"
-		value="N?p Bài">
+		value="Nộp Bài">
 
 	<section id="danhsach">
 	<div id="menu">
@@ -58,6 +62,11 @@
 						gio = rs2.getString(6).substring(0, 2);
 						phut = rs2.getString(6).substring(3, 5);
 						giay = rs2.getString(6).substring(6, 8);
+						soluongcauhoi = 4 * rs2.getInt("SOLUONGCH");
+						String sql = "select TOP " + soluongcauhoi
+								+ " CAUHOI.MACH, TENCH, MADADUNG, MADA, TENDA from CAUHOI, DAPAN "
+								+ "where CAUHOI.MACH =DAPAN.MACH order by CAUHOI.MACH, MADA";
+						rs = con.myExec(sql);
 				%> 
 			</li>
 			<li>
@@ -114,6 +123,7 @@
 						s--;
 						start();
 					}, 1100);
+					document.getElementById("CauHoi").style.display = 'block';
 				}
 				function displays() {
 					document.getElementById("CauHoi").style.display = 'block';
@@ -136,5 +146,41 @@
 	</div>
 	<div class="clear"></div>
 	</section>
+	
+		<div id="CauHoi" style="display: none">
+		<form name="myForm" id="myForm" action="hocvien_thi" method="post">
+			<%
+				while (rs.next()) {
+			%>
+			<div class="form-group">
+				<div id="dethi" class="alert alert-success" role="alert">
+					<input type="hidden" name="made<%=i%>" value="<%=rs.getString(1)%>">
+					<!-- ma de thi -->
+					<strong><%=i%>. <%=rs.getString("TENCH")%></strong> <br />
+					<!-- ten cau hoi -->
+
+
+					<label> <input type="radio" name="<%=i%>" value="1"><%=rs.getString("TENDA")%>
+					</label> <br />
+					<%
+						for (int j = 0; j < 3; j++) {
+								if (rs.next()) {
+					%>
+					<label> <input type="radio" name="<%=i%>"
+						value="<%=j + 2%>"><%=rs.getString("TENDA")%>
+					</label> <br />
+					<%
+						}
+							}
+					%>
+				</div>
+			</div>
+			<%
+				i++;
+				}
+			%>
+			<button id="submit" type="submit">NỘP BÀI</button>
+		</form>
+	</div>
 </body>
 </html>

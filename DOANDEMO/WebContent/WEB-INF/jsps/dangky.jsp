@@ -29,7 +29,7 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="index.jsp">Trang chủ</a></li>
                 <li><a href="gioithieu.jsp">Giới thiệu</a></li>
-                <li><a href="#">Các bài thi</a></li>
+               
                 <li><a href="tailieu.jsp">Tài liệu</a></li>
                 <li><a href="Hotro.jsp">Hỗ trợ</a></li>
             </ul>

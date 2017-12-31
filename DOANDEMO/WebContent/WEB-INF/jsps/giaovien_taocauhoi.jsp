@@ -82,23 +82,21 @@
 					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="giaodien.html"><span
-					class="glyphicon glyphicon-home"></span></a>
-			</div>
-			<div class="collapse navbar-collapse " id="myNavbar">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="index.jsp">Trang chủ</a></li>
-					<li><a href="gioithieu.jsp">Giới thiệu</a></li>
-					<li><a href="#">Các bài thi</a></li>
-					<li><a href="tailieu.jsp">Tài liệu</a></li>
-					<li><a href="Hotro.jsp">Hỗ trợ</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.jsp"><span
-							class="glyphicon glyphicon-log-out"></span> Đăng Xuất</a></li>
-				</ul>
-			</div>
-		</div>
+				 <a class="navbar-brand" href="trangchu_login"><span class="glyphicon glyphicon-home"></span></a>
+        </div>
+        <div class="collapse navbar-collapse " id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="trangchu_login">Trang chủ</a></li>
+                <li><a href="gioithieu_login">Giới thiệu</a></li>
+                
+                <li><a href="tailieu_login">Tài liệu</a></li>
+                <li><a href="hotro_login">Hỗ trợ</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" >
+                 <li><a href="index.jsp"><span class="glyphicon glyphicon-log-out"></span> Đăng xuất</a></li>
+            </ul>
+        </div>
+    </div>
 	</nav>
 
 	<div class="container">
@@ -106,8 +104,8 @@
 			<div class="col-sm-12">
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					<div class="carousel" data-flickity='{"autoPlay": true}'>
-						<img src="css/logo1.png" height="420px" width="1150px" /> <img
-							src="css/toic.jpg" height="420px" width="1150px" />
+						<img src="anhtailieu/logo1.png" height="420px" width="1150px" /> <img
+							src="anhtailieu/toic.jpg" height="420px" width="1150px" />
 					</div>
 				</div>
 				<br>
@@ -138,13 +136,15 @@
 				<option value="4">D</option>
 			</select>
 			</center>
+			<center>
 			<button type="submit" id="btnadd" type="submit" style="width: 100px;">
 				<i class="fa fa-plus" aria-hidden="true">ADD</i>
 			</button>
-			<button type="submit" id="btncancel" style="width: 100px; color: red"
+			<button type="submit" id="btncancel" style="width: 100px;"
 				onclick="location.href='giaovien.html';">
 				<i class="fa fa-ban" aria-hidden="true" type="submit">CANCEL</i>
 			</button>
+			</center>
 		</form>		
 	</div>
 	<br>

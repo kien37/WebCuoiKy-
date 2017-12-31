@@ -26,19 +26,18 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span></a>
+            <a class="navbar-brand" href="trangchu_login"><span class="glyphicon glyphicon-home"></span></a>
         </div>
         <div class="collapse navbar-collapse " id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.jsp">Trang chủ</a></li>
-                <li><a href="gioithieu.jsp">Giới thiệu</a></li>
-                <li><a href="#">Các bài thi</a></li>
-                <li><a href="tailieu.jsp">Tài liệu</a></li>
-                <li><a href="Hotro.jsp">Hỗ trợ</a></li>
+                <li class="active"><a href="trangchu_login">Trang chủ</a></li>
+                <li><a href="gioithieu_login">Giới thiệu</a></li>
+                
+                <li><a href="tailieu_login">Tài liệu</a></li>
+                <li><a href="hotro_login">Hỗ trợ</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="giaodien.html"><span class="glyphicon glyphicon-log-out"></span> Đăng xuất</a></li>
-
+            <ul class="nav navbar-nav navbar-right" >
+                 <li><a href="index.jsp"><span class="glyphicon glyphicon-log-out"></span> Đăng xuất</a></li>
             </ul>
         </div>
     </div>

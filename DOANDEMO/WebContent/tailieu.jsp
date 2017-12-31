@@ -32,9 +32,9 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="index.jsp">Trang chủ</a></li>
                 <li><a href="gioithieu.jsp">Giới thiệu</a></li>
-                <li><a href="#">Các bài thi</a></li>
+                
                 <li><a href="tailieu.jsp">Tài liệu</a></li>
-                <li><a href="Hotro.jsp">Hỗ trợ</a></li>
+                <li><a href="hotro.jsp">Hỗ trợ</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="dang-ky.html"><span class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
@@ -183,12 +183,25 @@
 
 <div id="id01" class="modal">
 
-    <form class="modal-content animate" action="/action_page.php">
+    <form class="modal-content animate" action="login" method="post">
         <div class="imgcontainer">
             <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <img src="antailieu/LogoC500.png" style="width: 80px" height="80px" alt="Avatar" class="avatar">
+            <img src="anhtailieu/LogoC500.png" style="width: 80px" height="80px" alt="Avatar" class="avatar">
         </div>
-
+		<div>
+			<label class="radiobox">Học Viên
+	  			<input type="radio" checked="checked" name="radio" value="1">
+	  			<span class="checkmark"></span>
+			</label>
+			<label class="radiobox">Giáo Viên
+	  			<input type="radio" name="radio" value="2">
+	  			<span class="checkmark"></span>
+			</label>
+			<label class="radiobox">Admin
+	  			<input type="radio" name="radio" value="3">
+	  			<span class="checkmark"></span>
+			</label>
+		</div>
         <div>
             <label><b>Username</b></label>
             <input type="text" placeholder="Enter Username" name="uname" required>
@@ -198,7 +211,7 @@
             <input type="password" placeholder="Enter Password" name="psw" required>
         </div>
         <div>
-            <button style="width: 80px; height: 50px; margin-left: 100px">Login</button>
+            <button type=submit style="width: 80px; height: 50px; margin-left: 100px">Login</button>
             <input type="checkbox" checked="checked"> Remember me
         </div>
 
